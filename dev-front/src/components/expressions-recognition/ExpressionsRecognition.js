@@ -69,8 +69,8 @@ class ExpressionsRecognition extends Component {
           }}>
           <video
             id="video"
-            width={350}
-            height={270}
+            width={700}
+            height={500}
             autoPlay
             muded="true"></video>
         </div>
