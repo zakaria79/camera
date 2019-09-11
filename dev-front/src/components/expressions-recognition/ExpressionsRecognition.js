@@ -44,7 +44,13 @@ class ExpressionsRecognition extends Component {
   }
 
   startVideo = () => {
-    window.navigator.getUserMedia(
+    navigator.getUserMedia_ =
+      navigator.getUserMedia ||
+      navigator.webkitGetUserMedia ||
+      navigator.mozGetUserMedia ||
+      navigator.msGetUserMedia;
+
+    window.navigator.getUserMedia_(
       {
         video: {},
       },
