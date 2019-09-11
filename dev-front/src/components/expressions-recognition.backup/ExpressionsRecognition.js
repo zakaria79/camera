@@ -67,12 +67,14 @@ class ExpressionsRecognition extends Component {
             display: 'flex',
             justifyContent: 'center',
           }}>
-          <video
-            id="video"
-            width={350}
-            height={270}
-            autoPlay
-            muded="true"></video>
+          <div>
+            <video
+              id="video"
+              width={350}
+              height={270}
+              autoPlay
+              muded="true"></video>
+          </div>
         </div>
       </div>
     );
